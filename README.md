@@ -7,6 +7,16 @@ other installation steps.
 
 ## How to use this tool
 
+Downloading the tool.
+
+```
+wget https://raw.githubusercontent.com/djx339/nvidia_driver_docker_volume/master/nvidia_driver_docker_volume.sh
+
+# or
+
+curl -sLO https://raw.githubusercontent.com/djx339/nvidia_driver_docker_volume/master/nvidia_driver_docker_volume.sh
+```
+
 directly add the tool to `docker run` command.
 
 ```shell
