@@ -1,8 +1,8 @@
 # NVIDIA driver docker volume
 
-A tool for using NVIDIA GPU inside the docker container.
+Using NVIDIA GPU inside the docker container.
 
-This tool inspired by [nvidia-docker](https://github.com/NVIDIA/nvidia-docker), but without any
+This project inspired by [nvidia-docker](https://github.com/NVIDIA/nvidia-docker), but without any
 other installation steps.
 
 ## How to use this tool
