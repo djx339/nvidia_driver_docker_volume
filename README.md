@@ -5,7 +5,7 @@ Using NVIDIA GPU inside the docker container.
 This project inspired by [nvidia-docker](https://github.com/NVIDIA/nvidia-docker), but without any
 other installation steps.
 
-## How to use this tool
+## How to use
 
 Downloading the tool:
 
