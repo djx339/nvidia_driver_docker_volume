@@ -410,6 +410,8 @@ if [[ "$f_remove" == "true" ]]; then
     exit
 fi
 
+nvidia::load_uvm
+
 if [[ "$f_force" == "true" ]] || ! volume::exist; then
     nvidia::init
     volume::create
