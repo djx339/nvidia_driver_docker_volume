@@ -79,6 +79,17 @@ NV_LIBRARIES=(
     "libnvidia-glsi.so"        # OpenGL system interaction (used by libEGL_nvidia)
 )
 
+help() {
+    echo "Usage: $0 [options]"
+    echo ""
+    echo "Options:"
+    echo "  -f    Force overwrite the exist volume."
+    echo "  -r    Remove all the volumes."
+    echo ""
+
+    exit 1
+}
+
 
 ##############################################################################
 # Nvidia
@@ -384,6 +395,9 @@ while getopts ":fr" opt; do
             ;;
         r)
             f_remove=true
+            ;;
+        h)
+            help
             ;;
         \?)
             help
