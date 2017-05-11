@@ -7,7 +7,7 @@ other installation steps.
 
 ## How to use this tool
 
-Downloading the tool.
+Downloading the tool:
 
 ```
 wget https://raw.githubusercontent.com/djx339/nvidia_driver_docker_volume/master/nvidia_driver_docker_volume.sh
@@ -17,13 +17,19 @@ wget https://raw.githubusercontent.com/djx339/nvidia_driver_docker_volume/master
 curl -sLO https://raw.githubusercontent.com/djx339/nvidia_driver_docker_volume/master/nvidia_driver_docker_volume.sh
 ```
 
-directly add the tool to `docker run` command.
+Make the file executable:
+
+```
+chmod +x nvidia_driver_docker_volume.sh
+```
+
+Directly run the tool inside `docker run` command as sub command:
 
 ```shell
 docker run $(/path/to/nvidia_driver_docker_volume.sh) nvidia/cuda:8.0-cudnn5-devel-ubuntu14.04 bash
 ```
 
-or you can run it first, then copy the output to the `docker run` command.
+or you can run it first, then copy the output to the `docker run` command:
 
 ```shell
 /path/to/nvidia_driver_docker_volume.sh
