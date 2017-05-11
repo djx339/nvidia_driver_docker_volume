@@ -38,3 +38,7 @@ docker run --device=/dev/nvidia0 ...... nvidia/cuda:8.0-cudnn5-devel-ubuntu14.04
 
 - Please let us known by [filing a new issue](https://github.com/djx339/nvidia_driver_docker_volume/issues/new)
 - You can contribute by opening a [pull request](https://github.com/djx339/nvidia_driver_docker_volume/compare)
+
+## License
+
+[BSD 3-Clause License](LICENSE)
