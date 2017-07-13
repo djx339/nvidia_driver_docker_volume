@@ -188,7 +188,7 @@ volume::clone_binaries() {
 
 volume::lookup_lib32() {
     local lib="$1"
-    local l32=$(ldconfig -p | grep -v "x86-64" | grep "$lib" | awk -F' => ' '{print $2}' 2>/dev/null)
+    local l32=$(/sbin/ldconfig -p | grep -v "x86-64" | grep "$lib" | awk -F' => ' '{print $2}' 2>/dev/null)
     for i in ${l32[@]}; do
         local l="$i"
         if [[ -n "$l" ]]; then
@@ -202,7 +202,7 @@ volume::lookup_lib32() {
 
 volume::lookup_lib64() {
     local lib="$1"
-    local l64=$(ldconfig -p | grep "x86-64" | grep "$lib" | awk -F' => ' '{print $2}' 2>/dev/null)
+    local l64=$(/sbin/ldconfig -p | grep "x86-64" | grep "$lib" | awk -F' => ' '{print $2}' 2>/dev/null)
     for i in ${l64[@]}; do
         local l="$i"
         if [[ -n "$l" ]]; then
